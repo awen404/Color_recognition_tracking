@@ -1,0 +1,32 @@
+SET PATH=D:\MDK\ARM\ARMCC\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\4\Matlab R2019a\runtime\win64;D:\4\Matlab R2019a\bin;D:\4\Matlab R2019a\polyspace\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files (x86)\Calibre2\;C:\Users\wensheng\AppData\Local\Microsoft\WindowsApps;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+SET CPU_TYPE=STM32F103ZE
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=OV7670
+SET CPU_CLOCK=0x007A1200
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\main.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_it.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\system_stm32f10x.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\lcd.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\exti.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\timer.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\colortracer.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\ov7725.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\sccb.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\beep.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\led.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\key.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\vehicle.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\delay.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\sys.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\usart.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\core_cm3.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmAsm" --Via "..\obj\startup_stm32f10x_hd._ia"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\misc.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_fsmc.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_gpio.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_rcc.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_usart.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_exti.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_tim.__i"
+"D:\MDK\ARM\ARMCC\Bin\ArmLink" --Via "..\OBJ\OV7670.lnp"
+"D:\MDK\ARM\ARMCC\Bin\fromelf.exe" "..\OBJ\OV7670.axf" --i32combined --output "..\OBJ\OV7670.hex"
